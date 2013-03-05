@@ -1,5 +1,6 @@
 #ticket {
   width: 60%;
+  min-width: 300px;
   background-color: #eee;
   background: url(../images/clover-field-blured.jpg);
   background-position: center;
