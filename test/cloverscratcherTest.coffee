@@ -14,8 +14,3 @@ describe 'Cloverscratcher instance', ->
     otherscratcher.symbols.should.not.equals cloverscratcher.symbols
   it 'should keep fixed symbols once defined', ->
     cloverscratcher.symbols.should.equals cloverscratcher.symbols
-
-describe 'Cloverscratcher start game', ->
-  it 'should include symbols inside dom', ->
-    cloverscratcher.start()
-      

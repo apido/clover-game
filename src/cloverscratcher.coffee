@@ -1,7 +1,7 @@
-window.onload = () ->
-  alert("welcome")
-  cloverscratcher = new Cloverscratcher
-  $('div.cloverleaf#leaf-'+i).html(cloverscratcher.symbols[i]) for i in [0..3]
+if $?
+  $( document ).ready () ->
+    cloverscratcher = new Cloverscratcher
+    cloverscratcher.start()
 
 class Cloverscratcher
   constructor: () ->
@@ -9,6 +9,8 @@ class Cloverscratcher
     for i in [0..3]
       @symbols[i] = Math.floor(Math.random() * 4)
 
-  start:() ->
+  start: () ->
+    $('div.cloverleaf#leaf-'+i).html(@symbols[i]) for i in [0..3]
 
-@Cloverscratcher = Cloverscratcher
+root = exports ? window
+root.Cloverscratcher = Cloverscratcher
