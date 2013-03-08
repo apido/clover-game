@@ -18,4 +18,4 @@ describe 'Cloverscratcher instance', ->
 describe 'Cloverscratcher start game', ->
   it 'should include symbols inside dom', ->
     cloverscratcher.start()
-
+      
