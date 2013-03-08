@@ -1,0 +1,29 @@
+.cal-day {
+  display:block;
+  text-align: center;
+  overflow: hidden;
+  line-height:1;
+  letter-spacing:normal;
+  text-transform:uppercase;
+  white-space:nowrap;
+  width:5em; /* min 4em */
+  font-size:.8em; /*any size you want*/
+  font-family:"Courier New", courier; /*fix with works best*/
+  background-color: #f98c2b;
+  color: #f2e2cd;
+  span {
+    display:block;
+    .month {
+      line-height:.9;
+      font-size:200%;
+    }
+    .day {
+      line-height:.8;
+      font-size:300%;
+    }
+    .year {
+      line-height:1;
+      font-size:150%;
+    }
+  }
+}
