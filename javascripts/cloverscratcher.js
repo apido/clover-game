@@ -25,7 +25,7 @@
       var i, _i, _results;
       _results = [];
       for (i = _i = 0; _i <= 3; i = ++_i) {
-        _results.push($('div.cloverleaf#leaf-' + i).html(this.symbols[i]));
+        _results.push($('div.cloverleaf#leaf-' + i + ' p').html(this.symbols[i]));
       }
       return _results;
     };

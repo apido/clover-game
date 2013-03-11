@@ -15,26 +15,30 @@ $RAD3: 0px;
 
 #ticket {
   width: 60%;
-  min-width: 295px;
+  min-width: $CLOVER_SIZE + 20;
   background-color: #eee;
   background: url(../images/clover-field-blured.jpg);
   background-position: center;
   text-align: center;
   border: 5px solid #4c3;
   margin-top: 2em;
+  padding: 20px;
   div#clover {
     width: $CLOVER_SIZE;
     height: $CLOVER_SIZE;
     margin: auto;
-    border: solid 3px red;
     @include transform(rotate(7deg));
     font-family:'heydings' !important;
 
     .cloverleaf{
       background: $CLOVER_COL;
-      width: 50%;
+      width: $CLOVER_SIZE/2 - 80;
       height: 80px;
-      padding-top: 70px;
+      padding: 70px 40px 0;
+      p{
+        line-height: 3em;
+        background-color: #262626;
+      }
     }
     #leaf-0, #leaf-2{
       float: left;
@@ -60,7 +64,7 @@ $RAD3: 0px;
 .button, .button:visited {
   background: #222 url(../images/overlay.png) repeat-x;
   display: inline-block;
-  padding: 5px 10px 6px;
+  padding: 5px;
   color: #fff;
   text-decoration: none;
   @include border-radius(6px);
