@@ -602,6 +602,12 @@ footer {
 .type-csharp .highlight .sc {
   color: #a31515; }
 
+@font-face {
+  font-family: 'heydings';
+  src: url(../fonts/heydings/heydings_icons-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/heydings/heydings_icons-webfont.woff) format("woff"), url(../fonts/heydings/heydings_icons-webfont.ttf) format("truetype"), url(../fonts/heydings/heydings_icons-webfont.svg#heydings_iconsregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 #ticket {
   width: 60%;
   min-width: 295px;
@@ -615,11 +621,13 @@ footer {
     width: 290px;
     height: 290px;
     margin: auto;
+    border: solid 3px red;
     -webkit-transform: rotate(7deg);
     -moz-transform: rotate(7deg);
     -ms-transform: rotate(7deg);
     -o-transform: rotate(7deg);
-    transform: rotate(7deg); }
+    transform: rotate(7deg);
+    font-family: "heydings" !important; }
     #ticket div#clover .cloverleaf {
       background: green;
       width: 50%;

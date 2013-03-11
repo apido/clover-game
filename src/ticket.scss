@@ -3,6 +3,15 @@ $CLOVER_COL: green;
 $RAD1: 50px;
 $RAD2: 75px;
 $RAD3: 0px;
+@font-face {
+ font-family: 'heydings';
+ src: url(../fonts/heydings/heydings_icons-webfont.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/heydings/heydings_icons-webfont.woff) format('woff'),
+      url(../fonts/heydings/heydings_icons-webfont.ttf) format('truetype'),
+      url(../fonts/heydings/heydings_icons-webfont.svg#heydings_iconsregular) format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
 
 #ticket {
   width: 60%;
@@ -19,6 +28,8 @@ $RAD3: 0px;
     margin: auto;
     border: solid 3px red;
     @include transform(rotate(7deg));
+    font-family:'heydings' !important;
+
     .cloverleaf{
       background: $CLOVER_COL;
       width: 50%;

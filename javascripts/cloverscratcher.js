@@ -13,10 +13,11 @@
   Cloverscratcher = (function() {
 
     function Cloverscratcher() {
-      var i, _i;
+      var font_case, i, _i;
       this.symbols = [];
+      font_case = ['h', 's', 'y', 'h'];
       for (i = _i = 0; _i <= 3; i = ++_i) {
-        this.symbols[i] = Math.floor(Math.random() * 4);
+        this.symbols[i] = font_case[Math.floor(Math.random() * 4)];
       }
     }
 
