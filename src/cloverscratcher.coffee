@@ -2,6 +2,9 @@ if $?
   $( document ).ready () ->
     cloverscratcher = new Cloverscratcher
     cloverscratcher.start()
+    scratch=(leaf) ->
+      $(this).addClass 'scratched'
+    $('div.cloverleaf p').click(scratch)
 
 class Cloverscratcher
   constructor: () ->

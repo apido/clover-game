@@ -632,10 +632,12 @@ footer {
       background: green;
       width: 65px;
       height: 80px;
-      padding: 70px 40px 0; }
-      #ticket div#clover .cloverleaf p {
-        line-height: 3em;
+      padding: 70px 40px 0;
+      line-height: 3em; }
+      #ticket div#clover .cloverleaf p.covered {
         background-color: #262626; }
+      #ticket div#clover .cloverleaf p.scratched {
+        background-color: #aaa; }
     #ticket div#clover #leaf-0, #ticket div#clover #leaf-2 {
       float: left; }
     #ticket div#clover #leaf-1, #ticket div#clover #leaf-3 {

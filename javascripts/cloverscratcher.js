@@ -4,9 +4,13 @@
 
   if (typeof $ !== "undefined" && $ !== null) {
     $(document).ready(function() {
-      var cloverscratcher;
+      var cloverscratcher, scratch;
       cloverscratcher = new Cloverscratcher;
-      return cloverscratcher.start();
+      cloverscratcher.start();
+      scratch = function(leaf) {
+        return $(this).addClass('scratched');
+      };
+      return $('div.cloverleaf p').click(scratch);
     });
   }
 
