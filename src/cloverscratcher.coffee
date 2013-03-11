@@ -12,6 +12,7 @@ class Cloverscratcher
       @symbols[i] = font_case[Math.floor(Math.random() * 4)]
 
   start: () ->
+    $('#calendar').hide()
     $('div.cloverleaf#leaf-'+i+' p').html(@symbols[i]) for i in [0..3]
   scratch:(leaf) ->
     $(this).addClass('scratched').removeClass('covered')
@@ -19,6 +20,8 @@ class Cloverscratcher
       Cloverscratcher.prototype.finish()
   finish: () ->
     alert 'Perdu'
+    $('#ticket').hide()
+    $('#calendar').show()
 
 root = exports ? window
 root.Cloverscratcher = Cloverscratcher
