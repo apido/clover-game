@@ -621,7 +621,6 @@ footer {
     width: 290px;
     height: 290px;
     margin: auto;
-    border: solid 3px red;
     -webkit-transform: rotate(7deg);
     -moz-transform: rotate(7deg);
     -ms-transform: rotate(7deg);

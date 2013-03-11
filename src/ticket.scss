@@ -26,7 +26,6 @@ $RAD3: 0px;
     width: $CLOVER_SIZE;
     height: $CLOVER_SIZE;
     margin: auto;
-    border: solid 3px red;
     @include transform(rotate(7deg));
     font-family:'heydings' !important;
 
