@@ -24,6 +24,7 @@
 
     Cloverscratcher.prototype.start = function() {
       var i, _i, _results;
+      $('#calendar').hide();
       _results = [];
       for (i = _i = 0; _i <= 3; i = ++_i) {
         _results.push($('div.cloverleaf#leaf-' + i + ' p').html(this.symbols[i]));
@@ -39,7 +40,9 @@
     };
 
     Cloverscratcher.prototype.finish = function() {
-      return alert('Perdu');
+      alert('Perdu');
+      $('#ticket').hide();
+      return $('#calendar').show();
     };
 
     return Cloverscratcher;
