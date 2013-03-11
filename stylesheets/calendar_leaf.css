@@ -1,4 +1,6 @@
 .cal-day {
+  width: 60%;
+  height: 50%;
   display: block;
   text-align: center;
   overflow: hidden;
@@ -6,13 +8,11 @@
   letter-spacing: normal;
   text-transform: uppercase;
   white-space: nowrap;
-  width: 5em;
-  /* min 4em */
   font-size: .8em;
   /*any size you want*/
   font-family: "Courier New", courier;
   /*fix with works best*/
-  background-color: #f98c2b;
+  background-color: #aaaaaa;
   color: #f2e2cd; }
   .cal-day span {
     display: block; }
