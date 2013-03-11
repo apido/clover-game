@@ -1,4 +1,8 @@
-$CLOVER_SIZE: 320px;
+$CLOVER_SIZE: 290px;
+$CLOVER_COL: green;
+$RAD1: 50px;
+$RAD2: 75px;
+$RAD3: 0px;
 
 #ticket {
   width: 60%;
@@ -12,18 +16,32 @@ $CLOVER_SIZE: 320px;
   div#clover {
     width: $CLOVER_SIZE;
     height: $CLOVER_SIZE;
-    background: url("../images/four-leaf-clover.png") center top no-repeat;
     margin: auto;
     border: solid 3px red;
+    @include transform(rotate(7deg));
     .cloverleaf{
+      background: $CLOVER_COL;
       width: 50%;
-      height: 150px;
+      height: 80px;
+      padding-top: 70px;
     }
     #leaf-0, #leaf-2{
       float: left;
     }
     #leaf-1, #leaf-3{
       float: right;
+    }
+    #leaf-0 {
+      border-radius: $RAD1 $RAD2 $RAD3 $RAD2;
+    }
+    #leaf-1 {
+      border-radius: $RAD2 $RAD1 $RAD2 $RAD3;
+    }
+    #leaf-2 {
+      border-radius: $RAD2 $RAD3 $RAD2 $RAD1;
+    }
+    #leaf-3 {
+      border-radius: $RAD3 $RAD2 $RAD1 $RAD2;
     }
   }
 }
