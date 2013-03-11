@@ -35,9 +35,12 @@ $RAD3: 0px;
       width: $CLOVER_SIZE/2 - 80;
       height: 80px;
       padding: 70px 40px 0;
-      p{
-        line-height: 3em;
+      line-height: 3em;
+      p.covered{
         background-color: #262626;
+      }
+      p.scratched{
+        background-color: #aaa;
       }
     }
     #leaf-0, #leaf-2{
