@@ -11,7 +11,7 @@ class Cloverscratcher
       @symbols[i] = font_case[Math.floor(Math.random() * 4)]
 
   start: () ->
-    $('div.cloverleaf#leaf-'+i).html(@symbols[i]) for i in [0..3]
+    $('div.cloverleaf#leaf-'+i+' p').html(@symbols[i]) for i in [0..3]
 
 root = exports ? window
 root.Cloverscratcher = Cloverscratcher

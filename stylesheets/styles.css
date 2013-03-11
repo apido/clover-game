@@ -610,13 +610,14 @@ footer {
 
 #ticket {
   width: 60%;
-  min-width: 295px;
+  min-width: 310px;
   background-color: #eee;
   background: url(../images/clover-field-blured.jpg);
   background-position: center;
   text-align: center;
   border: 5px solid #44cc33;
-  margin-top: 2em; }
+  margin-top: 2em;
+  padding: 20px; }
   #ticket div#clover {
     width: 290px;
     height: 290px;
@@ -629,9 +630,12 @@ footer {
     font-family: "heydings" !important; }
     #ticket div#clover .cloverleaf {
       background: green;
-      width: 50%;
+      width: 65px;
       height: 80px;
-      padding-top: 70px; }
+      padding: 70px 40px 0; }
+      #ticket div#clover .cloverleaf p {
+        line-height: 3em;
+        background-color: #262626; }
     #ticket div#clover #leaf-0, #ticket div#clover #leaf-2 {
       float: left; }
     #ticket div#clover #leaf-1, #ticket div#clover #leaf-3 {
@@ -648,7 +652,7 @@ footer {
 .button, .button:visited {
   background: #222222 url(../images/overlay.png) repeat-x;
   display: inline-block;
-  padding: 5px 10px 6px;
+  padding: 5px;
   color: #fff;
   text-decoration: none;
   -webkit-border-radius: 6px;
