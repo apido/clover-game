@@ -1,0 +1,52 @@
+/*
+Syntax error: File to import not found or unreadable: boubon/bourbon.
+              Load paths:
+                /Users/Merlinp/dev/clover-game
+                /Users/Merlinp/dev/clover-game/src
+        on line 1 of src/style.scss
+
+1: @import 'boubon/bourbon';
+2: @import 'src/ticket.scss';
+3: @import 'src/calendar_leaf.scss';
+
+Backtrace:
+src/style.scss:1
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:45:in `import'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin.rb:107:in `method_missing'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:444:in `watch_or_update'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:307:in `process_result'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:41:in `parse'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:21:in `parse!'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/bin/sass:8:in `<top (required)>'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/bin/sass:23:in `load'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: boubon/bourbon.\A               Load paths:\A                 /Users/Merlinp/dev/clover-game\A                 /Users/Merlinp/dev/clover-game/src\A         on line 1 of src/style.scss\A \A 1: @import 'boubon/bourbon';\A 2: @import 'src/ticket.scss';\A 3: @import 'src/calendar_leaf.scss';"; }

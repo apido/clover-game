@@ -1,0 +1,37 @@
+$CAL_BG: #ddd;
+$CAL_COL: #b00;
+$BOX_RAD: 20px;
+$CAL_BOX_COL: #666;
+#calendar{
+  border: none;
+  background-color: $CAL_BOX_COL;
+  width: 60%;
+  #leaf_block{
+    width: 90%;
+    margin: 5% 5%;
+    padding-top: 10px;
+    text-align: center;
+    text-transform:uppercase;
+    background-color: $CAL_BG;
+    @include border-top-radius($BOX_RAD);
+    @include border-bottom-radius($BOX_RAD);
+    @include border-left-radius($BOX_RAD);
+    @include border-right-radius($BOX_RAD);
+      .month {
+        font-size:2em;
+      }
+      .week_day {
+        font-size:2em;
+      }
+      .day_num {
+        line-height: 1.5;
+        font-size:12em;
+        font-weight: bold;
+        color: $CAL_COL;
+      }
+      .details {
+      }
+      .note {
+      }
+  }
+}

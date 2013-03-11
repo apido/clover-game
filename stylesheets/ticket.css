@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ticket {
   width: 60%;
   background-color: #eee;
@@ -56,3 +57,80 @@
 .blue.button:hover                  { background-color: #2575cf; }
 .yellow.button, .yellow.button:visited  { background-color: #ffb515; }
 .yellow.button:hover                { background-color: #fc9200; }
+=======
+/*
+Syntax error: Undefined mixin 'box-shadow'.
+        on line 15 of src/ticket.scss, in `box-shadow'
+        from line 15 of src/ticket.scss
+
+10:   border: 5px solid #4c3;
+11:   margin-top: 2em;
+12:   .cloverleaf {
+13:     width: $LEAF_SIZE;
+14:     height: $LEAF_SIZE;
+15:     @include box-shadow(0 0 6px 3px #000);
+16:   }
+17: }
+18: 
+19: .button, .button:visited {
+20:   background: #222 url(../images/overlay.png) repeat-x;
+
+Backtrace:
+src/ticket.scss:15:in `box-shadow'
+src/ticket.scss:15
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:251:in `visit_mixin'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:318:in `visit_rule'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/plugin.rb:107:in `method_missing'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:444:in `watch_or_update'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:307:in `process_result'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:41:in `parse'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/exec.rb:21:in `parse!'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/sass-3.2.5/bin/sass:8:in `<top (required)>'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/bin/sass:23:in `load'
+/Users/Merlinp/.rbenv/versions/1.9.3-p327/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'box-shadow'.\A         on line 15 of src/ticket.scss, in `box-shadow'\A         from line 15 of src/ticket.scss\A \A 10:   border: 5px solid #4c3;\A 11:   margin-top: 2em;\A 12:   .cloverleaf {\A 13:     width: $LEAF_SIZE;\A 14:     height: $LEAF_SIZE;\A 15:     @include box-shadow(0 0 6px 3px #000);\A 16:   }\A 17: }\A 18: \A 19: .button, .button:visited {\A 20:   background: #222 url(../images/overlay.png) repeat-x;"; }
+>>>>>>> gh-pages

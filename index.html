@@ -6,9 +6,9 @@
     <title>Tentez votre chance ! by apido</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="stylesheets/ticket.css">
     <script src="javascripts/scale.fix.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/cloverscratcher.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,10 +31,23 @@
 
       </header>
       <section>
-       
-        <div id="ticket">
+        <section id="ticket">
           <h3 class="pink super button">Tentez votre chance</h3>
-          <img src="images/four-leaf-clover.png">
+          <div id='clover'>
+            <div class='cloverleaf' id='leaf-0'></div>
+            <div class='cloverleaf' id='leaf-1'></div>
+            <div class='cloverleaf' id='leaf-2'></div>
+            <div class='cloverleaf' id='leaf-3'></div>
+          </div>
+        </section>
+        <section id='calendar'>
+         <div id= 'leaf_block'>
+          <div class='week_day'>Vendredi</div>
+          <div class='day_num'>13</div>
+          <div class='month'>Septembre</div>
+          <div class='details'>2013 - St Aimé</div>
+          <div class='note'>Mariage Nelly & Pierre</div>
+         </div>
         </div>
       </section>
       <footer>
