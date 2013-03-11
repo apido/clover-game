@@ -4,13 +4,10 @@
 
   if (typeof $ !== "undefined" && $ !== null) {
     $(document).ready(function() {
-      var cloverscratcher, scratch;
+      var cloverscratcher;
       cloverscratcher = new Cloverscratcher;
       cloverscratcher.start();
-      scratch = function(leaf) {
-        return $(this).addClass('scratched');
-      };
-      return $('div.cloverleaf p').click(scratch);
+      return $('div.cloverleaf p').click(cloverscratcher.scratch);
     });
   }
 
@@ -32,6 +29,17 @@
         _results.push($('div.cloverleaf#leaf-' + i + ' p').html(this.symbols[i]));
       }
       return _results;
+    };
+
+    Cloverscratcher.prototype.scratch = function(leaf) {
+      $(this).addClass('scratched').removeClass('covered');
+      if ($('div.cloverleaf p.covered').length === 0) {
+        return Cloverscratcher.prototype.finish();
+      }
+    };
+
+    Cloverscratcher.prototype.finish = function() {
+      return alert('Perdu');
     };
 
     return Cloverscratcher;
