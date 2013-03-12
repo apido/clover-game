@@ -615,7 +615,10 @@ footer {
   text-align: center;
   border: 5px solid #44cc33;
   margin-top: 2em;
-  padding: 20px; }
+  padding: 20px;
+  -webkit-box-shadow: compact(0 0 45px 33px rgba(0, 0, 0, 0.65), false, false, false, false, false, false, false, false);
+  -moz-box-shadow: compact(0 0 45px 33px rgba(0, 0, 0, 0.65), false, false, false, false, false, false, false, false);
+  box-shadow: compact(0 0 45px 33px rgba(0, 0, 0, 0.65), false, false, false, false, false, false, false, false); }
   #ticket div#clover {
     width: 290px;
     height: 290px;
