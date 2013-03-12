@@ -29,16 +29,16 @@ body {
 	font-size: 14px;
 	color: #232323;
 	background-color: #FBFAF7;
-  background: url(../images/nous_a_erbalunga.jpg), url(../images/photo.jpg);
-  @media print, screen and (max-width: 480px) {
-    background-size: 320px Auto;
-  }
   margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
-
 }
-
+body.discovered{
+  background: url(../images/nous_a_erbalunga.jpg);
+  @media print, screen and (max-width: 480px) {
+    background-size: 320px Auto;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   color:#232323;
   margin:36px 0 10px;

@@ -43,6 +43,8 @@
       var note;
       $('#ticket').hide();
       note = new window.TypingText(document.getElementById('note'));
+      $('header').hide();
+      $('body').addClass('discovered');
       $('#calendar').show();
       return window.TypingText.runAll();
     };

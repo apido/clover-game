@@ -21,6 +21,8 @@ class Cloverscratcher
   finish: () ->
     $('#ticket').hide()
     note = new window.TypingText(document.getElementById('note'))
+    $('header').hide()
+    $('body').addClass('discovered')
     $('#calendar').show()
     window.TypingText.runAll()
 
