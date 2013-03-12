@@ -27,9 +27,13 @@ body {
   font-size: 14px;
   color: #232323;
   background-color: #FBFAF7;
+  background: url(../images/nous_a_erbalunga.jpg), url(../images/photo.jpg);
   margin: 0;
   line-height: 1.8em;
   -webkit-font-smoothing: antialiased; }
+  @media print, screen and (max-width: 480px) {
+    body {
+      background-size: 320px Auto; } }
 
 h1, h2, h3, h4, h5, h6 {
   color: #232323;
