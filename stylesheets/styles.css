@@ -790,14 +790,16 @@ footer {
       font-size: 12em;
       font-weight: bold;
       color: #bb0000; }
-    #calendar #leaf_block .note {
-      padding: 10px 0;
+    #calendar #leaf_block #note {
+      min-height: 2.2em;
+      padding: 10px 0 0 8px;
       -webkit-transform: rotate(-5deg);
       -moz-transform: rotate(-5deg);
       -ms-transform: rotate(-5deg);
       -o-transform: rotate(-5deg);
       transform: rotate(-5deg);
       text-transform: none;
+      text-align: left;
       font-family: "Clicker Script", cursive;
       color: blue;
       font-size: 4em;

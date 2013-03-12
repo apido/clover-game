@@ -20,7 +20,9 @@ class Cloverscratcher
       Cloverscratcher.prototype.finish()
   finish: () ->
     $('#ticket').hide()
+    note = new window.TypingText(document.getElementById('note'))
     $('#calendar').show()
+    window.TypingText.runAll()
 
 root = exports ? window
 root.Cloverscratcher = Cloverscratcher

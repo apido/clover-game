@@ -40,8 +40,11 @@
     };
 
     Cloverscratcher.prototype.finish = function() {
+      var note;
       $('#ticket').hide();
-      return $('#calendar').show();
+      note = new window.TypingText(document.getElementById('note'));
+      $('#calendar').show();
+      return window.TypingText.runAll();
     };
 
     return Cloverscratcher;

@@ -35,10 +35,12 @@ $CAL_BOX_COL: #666;
       }
       .details {
       }
-      .note {
-        padding: 10px 0;
+      #note {
+        min-height: 2.2em;
+        padding: 10px 0 0 8px;
         @include transform(rotate(-5deg));
         text-transform: none;
+        text-align: left;
         font-family: 'Clicker Script', cursive;
         color: blue;
         font-size: 4em;
