@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 /* MeyerWeb Reset */
 html, body, div, span, applet, object, iframe,
@@ -240,9 +241,6 @@ a.buttons {
   padding: 2px 2px 2px 22px;
   height: 30px; }
 
-a.github {
-  background: url(../images/octocat-small.png) no-repeat 1px; }
-
 a.buttons:hover {
   color: #fff;
   text-decoration: none; }
@@ -280,7 +278,7 @@ footer {
     padding-right: 320px; }
 
   section {
-    padding: 20px 84px 20px 50px;
+    padding: 20px 50px;
     margin: 0 0 20px; }
 
   header a small {
@@ -299,7 +297,7 @@ footer {
     margin-right: 0; }
 
   section {
-    padding: 10px 0 10px 20px;
+    padding: 10px;
     margin: 0 0 30px; }
 
   footer {
@@ -725,11 +723,13 @@ footer {
 #calendar {
   border: none;
   background-color: #666666;
-  width: 60%; }
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px; }
   #calendar #leaf_block {
-    width: 90%;
-    margin: 5% 5%;
-    padding-top: 10px;
+    width: 85%;
+    margin: 5% auto;
+    padding: 25px 10px 20px;
     text-align: center;
     text-transform: uppercase;
     background-color: #dddddd;
@@ -786,7 +786,19 @@ footer {
     #calendar #leaf_block .week_day {
       font-size: 2em; }
     #calendar #leaf_block .day_num {
-      line-height: 1.5;
+      line-height: 1.1;
       font-size: 12em;
       font-weight: bold;
       color: #bb0000; }
+    #calendar #leaf_block .note {
+      padding: 10px 0;
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      text-transform: none;
+      font-family: "Clicker Script", cursive;
+      color: blue;
+      font-size: 4em;
+      line-height: 1.1em; }

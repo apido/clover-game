@@ -40,7 +40,6 @@
     };
 
     Cloverscratcher.prototype.finish = function() {
-      alert('Perdu');
       $('#ticket').hide();
       return $('#calendar').show();
     };

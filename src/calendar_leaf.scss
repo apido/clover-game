@@ -2,14 +2,18 @@ $CAL_BG: #ddd;
 $CAL_COL: #b00;
 $BOX_RAD: 20px;
 $CAL_BOX_COL: #666;
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext);
+
 #calendar{
   border: none;
   background-color: $CAL_BOX_COL;
-  width: 60%;
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px;
   #leaf_block{
-    width: 90%;
-    margin: 5% 5%;
-    padding-top: 10px;
+    width: 85%;
+    margin: 5% auto;
+    padding: 25px 10px 20px;
     text-align: center;
     text-transform:uppercase;
     background-color: $CAL_BG;
@@ -24,7 +28,7 @@ $CAL_BOX_COL: #666;
         font-size:2em;
       }
       .day_num {
-        line-height: 1.5;
+        line-height: 1.1;
         font-size:12em;
         font-weight: bold;
         color: $CAL_COL;
@@ -32,6 +36,13 @@ $CAL_BOX_COL: #666;
       .details {
       }
       .note {
+        padding: 10px 0;
+        @include transform(rotate(-5deg));
+        text-transform: none;
+        font-family: 'Clicker Script', cursive;
+        color: blue;
+        font-size: 4em;
+        line-height: 1.1em;
       }
   }
 }

@@ -19,7 +19,6 @@ class Cloverscratcher
     if $('div.cloverleaf p.covered').length == 0
       Cloverscratcher.prototype.finish()
   finish: () ->
-    alert 'Perdu'
     $('#ticket').hide()
     $('#calendar').show()
 

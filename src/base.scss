@@ -296,10 +296,6 @@ a.buttons {
 	height: 30px;
 }
 
-a.github {
-	background: url(../images/octocat-small.png) no-repeat 1px;
-}
-
 a.buttons:hover {
 	color: #fff;
 	text-decoration: none;
@@ -349,7 +345,7 @@ footer {
   }
 
   section {
-    padding:20px 84px 20px 50px;
+    padding:20px 50px;
     margin:0 0 20px;
   }
 
@@ -375,7 +371,7 @@ footer {
   }
 
 	section {
-    padding:10px 0 10px 20px;
+    padding:10px;
     margin:0 0 30px;
   }
 
