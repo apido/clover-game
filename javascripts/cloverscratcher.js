@@ -14,12 +14,7 @@
   Cloverscratcher = (function() {
 
     function Cloverscratcher() {
-      var font_case, i, _i;
-      this.symbols = [];
-      font_case = ['h', 's', 'y', 'h'];
-      for (i = _i = 0; _i <= 3; i = ++_i) {
-        this.symbols[i] = font_case[Math.floor(Math.random() * 4)];
-      }
+      this.symbols = ['h', 'h', 'h', 'h'];
     }
 
     Cloverscratcher.prototype.start = function() {
@@ -27,24 +22,37 @@
       $('#calendar').hide();
       _results = [];
       for (i = _i = 0; _i <= 3; i = ++_i) {
-        _results.push($('div.cloverleaf#leaf-' + i + ' p').html(this.symbols[i]));
+        _results.push($('div.cloverleaf#leaf-' + i + ' p').append(this.symbols[i]));
       }
       return _results;
     };
 
-    Cloverscratcher.prototype.scratch = function(leaf) {
+    Cloverscratcher.prototype.scratch = function() {
       $(this).addClass('scratched').removeClass('covered');
+      $('.cloverleaf p.scratched span').fadeOut(2000);
       if ($('div.cloverleaf p.covered').length === 0) {
         return Cloverscratcher.prototype.finish();
       }
     };
 
     Cloverscratcher.prototype.finish = function() {
-      var note;
-      $('#ticket').hide();
-      note = new window.TypingText(document.getElementById('note'));
-      $('#calendar').show();
-      return window.TypingText.runAll();
+      var delay, display_cal, hide_game, write_note;
+      hide_game = function() {
+        return $('#ticket').fadeOut(display_cal);
+      };
+      display_cal = function() {
+        $('#calendar').fadeIn(3000, write_note);
+        return $('body').addClass('discovered');
+      };
+      write_note = function() {
+        $('#note').html("Mariage de<br/> Nelly & Pierre");
+        new window.TypingText(document.getElementById('note'));
+        return window.TypingText.runAll();
+      };
+      delay = function(time, fn, args) {
+        return setTimeout(fn, time, args);
+      };
+      return delay(2500, hide_game);
     };
 
     return Cloverscratcher;

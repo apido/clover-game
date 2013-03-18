@@ -25,6 +25,7 @@ $RAD3: 0px;
   padding: 20px;
   @include box-shadow(0 0 45px 33px hsla(22, 0%, 0%, 0.65));
   div#clover {
+    cursor:url(../images/sponge.png) 50 50,auto;
     width: $CLOVER_SIZE;
     height: $CLOVER_SIZE;
     margin: auto;
@@ -42,6 +43,14 @@ $RAD3: 0px;
       }
       p.scratched{
         background-color: #aaa;
+        span {
+          background: url("../images/pattern-zebra.png") repeat scroll 0% 0%;
+          background-color: #262626;
+          position: absolute;
+          display: block;
+          width: $CLOVER_SIZE/2 - 80;
+          height: 3em;
+        }
       }
     }
     #leaf-0, #leaf-2{
