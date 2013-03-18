@@ -5,7 +5,7 @@ if $?
     $('div.cloverleaf p').click(cloverscratcher.scratch)
 
 class Cloverscratcher
-  constructor: () ->
+  constructor: ->
     @symbols = ['h','h','h','h']
     ## for random symbols uncomment this :
     #    @symbols = []
@@ -13,21 +13,26 @@ class Cloverscratcher
     #    for i in [0..3]
     #      @symbols[i] = font_case[Math.floor(Math.random() * 4)]
 
-  start: () ->
+  start: ->
     $('#calendar').hide()
     $('div.cloverleaf#leaf-'+i+' p').html(@symbols[i]) for i in [0..3]
-  scratch:() ->
-    console.log @
+  scratch: ->
     $(this).addClass('scratched').removeClass('covered')
-    if $('div.cloverleaf p.covered').length == 0
-      Cloverscratcher.prototype.finish()
-  finish: () ->
-    $('#ticket').hide()
-    note = new window.TypingText(document.getElementById('note'))
-    $('header').hide()
-    $('body').addClass('discovered')
-    $('#calendar').show()
-    window.TypingText.runAll()
+    Cloverscratcher.prototype.finish() if $('div.cloverleaf p.covered').length == 0
+  finish: ->
+    hide_game = ->
+      $('#ticket').fadeOut display_cal
+    display_cal = ->
+      $('#calendar').fadeIn 3000, write_note
+      $('body').addClass('discovered')
+    write_note = ->
+      $('#note').html "Mariage de<br/> Nelly & Pierre"
+      new window.TypingText(document.getElementById('note'))
+      window.TypingText.runAll()
+    delay = (time, fn, args) ->
+        setTimeout fn, time, args
+
+    delay 500, hide_game
 
 root = exports ? window
 root.Cloverscratcher = Cloverscratcher

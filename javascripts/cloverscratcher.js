@@ -28,7 +28,6 @@
     };
 
     Cloverscratcher.prototype.scratch = function() {
-      console.log(this);
       $(this).addClass('scratched').removeClass('covered');
       if ($('div.cloverleaf p.covered').length === 0) {
         return Cloverscratcher.prototype.finish();
@@ -36,13 +35,23 @@
     };
 
     Cloverscratcher.prototype.finish = function() {
-      var note;
-      $('#ticket').hide();
-      note = new window.TypingText(document.getElementById('note'));
-      $('header').hide();
-      $('body').addClass('discovered');
-      $('#calendar').show();
-      return window.TypingText.runAll();
+      var delay, display_cal, hide_game, write_note;
+      hide_game = function() {
+        return $('#ticket').fadeOut(display_cal);
+      };
+      display_cal = function() {
+        $('#calendar').fadeIn(3000, write_note);
+        return $('body').addClass('discovered');
+      };
+      write_note = function() {
+        $('#note').html("Mariage de<br/> Nelly & Pierre");
+        new window.TypingText(document.getElementById('note'));
+        return window.TypingText.runAll();
+      };
+      delay = function(time, fn, args) {
+        return setTimeout(fn, time, args);
+      };
+      return delay(500, hide_game);
     };
 
     return Cloverscratcher;
