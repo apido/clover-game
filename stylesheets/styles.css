@@ -738,7 +738,7 @@ footer {
   border: none;
   background: #666666;
   /* The Fallback */
-  background: rgba(102, 102, 102, 0.5);
+  background: rgba(102, 102, 102, 0.7);
   width: 90%;
   max-width: 400px;
   min-width: 250px; }
@@ -750,7 +750,7 @@ footer {
     text-transform: uppercase;
     background: #dddddd;
     /* The Fallback */
-    background: rgba(221, 221, 221, 0.5);
+    background: rgba(221, 221, 221, 0.7);
     -webkit-border-top-left-radius: 20px;
     -moz-border-top-left-radius: 20px;
     -moz-border-radius-topleft: 20px;

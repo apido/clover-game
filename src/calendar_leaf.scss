@@ -10,7 +10,7 @@ $CAL_BOX_COL: #666;
 
 #calendar{
   border: none;
-  @include background-opacity($CAL_BOX_COL, 0.5);
+  @include background-opacity($CAL_BOX_COL, 0.7);
   width: 90%;
   max-width: 400px;
   min-width: 250px;
@@ -20,7 +20,7 @@ $CAL_BOX_COL: #666;
     padding: 25px 10px 20px;
     text-align: center;
     text-transform:uppercase;
-    @include background-opacity($CAL_BG, 0.5);
+    @include background-opacity($CAL_BG, 0.7);
     @include border-top-radius($BOX_RAD);
     @include border-bottom-radius($BOX_RAD);
     @include border-left-radius($BOX_RAD);
