@@ -623,6 +623,7 @@ footer {
   margin-top: 2em;
   padding: 20px; }
   #ticket div#clover {
+    cursor: url(../images/sponge.png) 50 100, auto;
     width: 290px;
     height: 290px;
     margin: auto;
