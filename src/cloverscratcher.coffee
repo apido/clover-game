@@ -6,15 +6,18 @@ if $?
 
 class Cloverscratcher
   constructor: () ->
-    @symbols = []
-    font_case = ['h','s','y','h']
-    for i in [0..3]
-      @symbols[i] = font_case[Math.floor(Math.random() * 4)]
+    @symbols = ['h','h','h','h']
+    ## for random symbols uncomment this :
+    #    @symbols = []
+    #    font_case = ['h','s','y','h']
+    #    for i in [0..3]
+    #      @symbols[i] = font_case[Math.floor(Math.random() * 4)]
 
   start: () ->
     $('#calendar').hide()
     $('div.cloverleaf#leaf-'+i+' p').html(@symbols[i]) for i in [0..3]
-  scratch:(leaf) ->
+  scratch:() ->
+    console.log @
     $(this).addClass('scratched').removeClass('covered')
     if $('div.cloverleaf p.covered').length == 0
       Cloverscratcher.prototype.finish()

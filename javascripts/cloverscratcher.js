@@ -14,12 +14,7 @@
   Cloverscratcher = (function() {
 
     function Cloverscratcher() {
-      var font_case, i, _i;
-      this.symbols = [];
-      font_case = ['h', 's', 'y', 'h'];
-      for (i = _i = 0; _i <= 3; i = ++_i) {
-        this.symbols[i] = font_case[Math.floor(Math.random() * 4)];
-      }
+      this.symbols = ['h', 'h', 'h', 'h'];
     }
 
     Cloverscratcher.prototype.start = function() {
@@ -32,7 +27,8 @@
       return _results;
     };
 
-    Cloverscratcher.prototype.scratch = function(leaf) {
+    Cloverscratcher.prototype.scratch = function() {
+      console.log(this);
       $(this).addClass('scratched').removeClass('covered');
       if ($('div.cloverleaf p.covered').length === 0) {
         return Cloverscratcher.prototype.finish();
