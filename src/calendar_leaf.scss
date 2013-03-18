@@ -3,10 +3,14 @@ $CAL_COL: #b00;
 $BOX_RAD: 20px;
 $CAL_BOX_COL: #666;
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script&subset=latin,latin-ext);
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}
 
 #calendar{
   border: none;
-  background-color: $CAL_BOX_COL;
+  @include background-opacity($CAL_BOX_COL, 0.5);
   width: 90%;
   max-width: 400px;
   min-width: 250px;
@@ -16,7 +20,7 @@ $CAL_BOX_COL: #666;
     padding: 25px 10px 20px;
     text-align: center;
     text-transform:uppercase;
-    background-color: $CAL_BG;
+    @include background-opacity($CAL_BG, 0.5);
     @include border-top-radius($BOX_RAD);
     @include border-bottom-radius($BOX_RAD);
     @include border-left-radius($BOX_RAD);
