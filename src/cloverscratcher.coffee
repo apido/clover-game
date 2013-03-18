@@ -15,9 +15,10 @@ class Cloverscratcher
 
   start: ->
     $('#calendar').hide()
-    $('div.cloverleaf#leaf-'+i+' p').html(@symbols[i]) for i in [0..3]
+    $('div.cloverleaf#leaf-'+i+' p').append(@symbols[i]) for i in [0..3]
   scratch: ->
     $(this).addClass('scratched').removeClass('covered')
+    $('.cloverleaf p.scratched span').fadeOut(2000)
     Cloverscratcher.prototype.finish() if $('div.cloverleaf p.covered').length == 0
   finish: ->
     hide_game = ->
@@ -32,7 +33,7 @@ class Cloverscratcher
     delay = (time, fn, args) ->
         setTimeout fn, time, args
 
-    delay 500, hide_game
+    delay 2500, hide_game
 
 root = exports ? window
 root.Cloverscratcher = Cloverscratcher

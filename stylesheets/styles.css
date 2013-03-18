@@ -643,6 +643,13 @@ footer {
         background-color: #262626; }
       #ticket div#clover .cloverleaf p.scratched {
         background-color: #aaa; }
+        #ticket div#clover .cloverleaf p.scratched span {
+          background: url("../images/pattern-zebra.png") repeat scroll 0% 0%;
+          background-color: #262626;
+          position: absolute;
+          display: block;
+          width: 65px;
+          height: 3em; }
     #ticket div#clover #leaf-0, #ticket div#clover #leaf-2 {
       float: left; }
     #ticket div#clover #leaf-1, #ticket div#clover #leaf-3 {

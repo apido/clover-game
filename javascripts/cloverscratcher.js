@@ -22,13 +22,14 @@
       $('#calendar').hide();
       _results = [];
       for (i = _i = 0; _i <= 3; i = ++_i) {
-        _results.push($('div.cloverleaf#leaf-' + i + ' p').html(this.symbols[i]));
+        _results.push($('div.cloverleaf#leaf-' + i + ' p').append(this.symbols[i]));
       }
       return _results;
     };
 
     Cloverscratcher.prototype.scratch = function() {
       $(this).addClass('scratched').removeClass('covered');
+      $('.cloverleaf p.scratched span').fadeOut(2000);
       if ($('div.cloverleaf p.covered').length === 0) {
         return Cloverscratcher.prototype.finish();
       }
@@ -51,7 +52,7 @@
       delay = function(time, fn, args) {
         return setTimeout(fn, time, args);
       };
-      return delay(500, hide_game);
+      return delay(2500, hide_game);
     };
 
     return Cloverscratcher;

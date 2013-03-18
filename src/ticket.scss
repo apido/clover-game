@@ -42,6 +42,14 @@ $RAD3: 0px;
       }
       p.scratched{
         background-color: #aaa;
+        span {
+          background: url("../images/pattern-zebra.png") repeat scroll 0% 0%;
+          background-color: #262626;
+          position: absolute;
+          display: block;
+          width: $CLOVER_SIZE/2 - 80;
+          height: 3em;
+        }
       }
     }
     #leaf-0, #leaf-2{
