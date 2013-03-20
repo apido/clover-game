@@ -612,6 +612,70 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.info {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2); }
+
+#hedgehog {
+  position: absolute;
+  height: 128px;
+  width: 128px;
+  margin-top: -470px;
+  margin-left: -60px; }
+  #hedgehog img {
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    transform: rotate(-70deg); }
+  #hedgehog em {
+    border: 1px solid #076fe4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: compact(inset 0 1px 0 0 #8ebcf1, false, false, false, false, false, false, false, false);
+    -moz-box-shadow: compact(inset 0 1px 0 0 #8ebcf1, false, false, false, false, false, false, false, false);
+    box-shadow: compact(inset 0 1px 0 0 #8ebcf1, false, false, false, false, false, false, false, false);
+    color: white;
+    display: inline;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #4294f0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false)));
+    background-image: -webkit-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
+    background-image: -moz-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
+    background-image: -ms-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
+    background-image: -o-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
+    background-image: linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
+    padding: 6px 18px 7px;
+    text-shadow: 0 1px 0 #0065d6;
+    -webkit-background-clip: padding-box;
+    display: none;
+    position: absolute;
+    width: 150px; }
+    #hedgehog em:hover {
+      -webkit-box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
+      -moz-box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
+      box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
+      cursor: pointer;
+      background-color: #2f87ea;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false)));
+      background-image: -webkit-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
+      background-image: -moz-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
+      background-image: -ms-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
+      background-image: -o-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
+      background-image: linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false)); }
+    #hedgehog em:active {
+      border: 1px solid #076fe4;
+      -webkit-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
+      -moz-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
+      box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false); }
+
 #ticket {
   width: 60%;
   min-width: 310px;
@@ -622,14 +686,14 @@ footer {
   border: 5px solid #44cc33;
   margin-top: 2em;
   padding: 20px;
-  -webkit-box-shadow: compact(0 0 45px 33px rgba(0, 0, 0, 0.65), false, false, false, false, false, false, false, false);
-  -moz-box-shadow: compact(0 0 45px 33px rgba(0, 0, 0, 0.65), false, false, false, false, false, false, false, false);
-  box-shadow: compact(0 0 45px 33px rgba(0, 0, 0, 0.65), false, false, false, false, false, false, false, false); }
+  -webkit-box-shadow: 4px 4px 5px #282b1f;
+  -moz-box-shadow: 4px 4px 5px #282b1f;
+  box-shadow: 4px 4px 5px #282b1f; }
   #ticket div#clover {
-    cursor: url(../images/sponge.png) 50 50, auto;
     width: 290px;
     height: 290px;
     margin: auto;
+    padding: 10px;
     -webkit-transform: rotate(7deg);
     -moz-transform: rotate(7deg);
     -ms-transform: rotate(7deg);
@@ -643,7 +707,8 @@ footer {
       padding: 70px 40px 0;
       line-height: 3em; }
       #ticket div#clover .cloverleaf p.covered {
-        background-color: #262626; }
+        background-color: #262626;
+        cursor: pointer; }
       #ticket div#clover .cloverleaf p.scratched {
         background-color: #aaa; }
         #ticket div#clover .cloverleaf p.scratched span {

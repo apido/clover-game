@@ -13,6 +13,21 @@ $RAD3: 0px;
  font-style: normal;
 }
 
+.info {@include transform(scale(1.2));}
+#hedgehog {
+  position: absolute;
+  height: 128px;
+  width: 128px;
+  margin-top: -470px;
+  margin-left: -60px;
+  img {@include transform(rotate(-70deg));}
+  em {
+    @include button;
+    display: none;
+    position: absolute;
+    width: 150px;
+  }
+}
 #ticket {
   width: 60%;
   min-width: $CLOVER_SIZE + 20;
@@ -23,12 +38,14 @@ $RAD3: 0px;
   border: 5px solid #4c3;
   margin-top: 2em;
   padding: 20px;
-  @include box-shadow(0 0 45px 33px hsla(22, 0%, 0%, 0.65));
+  -webkit-box-shadow: 4px 4px 5px #282b1f;
+  -moz-box-shadow: 4px 4px 5px #282b1f;
+  box-shadow: 4px 4px 5px #282b1f;
   div#clover {
-    cursor:url(../images/sponge.png) 50 50,auto;
     width: $CLOVER_SIZE;
     height: $CLOVER_SIZE;
     margin: auto;
+    padding: 10px;
     @include transform(rotate(7deg));
     font-family:'heydings' !important;
 
@@ -40,6 +57,7 @@ $RAD3: 0px;
       line-height: 3em;
       p.covered{
         background-color: #262626;
+        cursor:pointer;
       }
       p.scratched{
         background-color: #aaa;
