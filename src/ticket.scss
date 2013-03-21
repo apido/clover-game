@@ -19,7 +19,7 @@ $RAD3: 0px;
   height: 128px;
   width: 128px;
   margin-top: -470px;
-  margin-left: -60px;
+  margin-left: -40px;
   img {@include transform(rotate(-70deg));}
   em {
     @include button;
@@ -28,6 +28,7 @@ $RAD3: 0px;
     width: 150px;
   }
 }
+.onLeaf {background: red;}
 #ticket {
   width: 60%;
   min-width: $CLOVER_SIZE + 20;

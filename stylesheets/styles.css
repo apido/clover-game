@@ -624,7 +624,7 @@ footer {
   height: 128px;
   width: 128px;
   margin-top: -470px;
-  margin-left: -60px; }
+  margin-left: -40px; }
   #hedgehog img {
     -webkit-transform: rotate(-70deg);
     -moz-transform: rotate(-70deg);
@@ -675,6 +675,9 @@ footer {
       -webkit-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
       -moz-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
       box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false); }
+
+.onLeaf {
+  background: red; }
 
 #ticket {
   width: 60%;
@@ -803,6 +806,7 @@ footer {
   background-color: #fc9200; }
 
 #calendar {
+  display: none;
   border: none;
   background: #666666;
   /* The Fallback */

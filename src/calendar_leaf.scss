@@ -9,6 +9,7 @@ $CAL_BOX_COL: #666;
 }
 
 #calendar{
+  display: none;
   border: none;
   @include background-opacity($CAL_BOX_COL, 0.7);
   width: 90%;
