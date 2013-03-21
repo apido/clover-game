@@ -23,19 +23,26 @@ class Cloverscratcher
     toggleInfo = =>
       @ticket.find('div.cloverleaf p').toggleClass 'info'
       @hedgehog.toggleClass 'info'
-      @hedgehog.find('em').fadeToggle()
+      @hedgehog.find('.notice').fadeToggle()
     toggleInfo()
     setTimeout(toggleInfo,2600,)
     @yet_noticed = yes
   scratch:(clicked_leaf) ->
-    # translate hedgehog to this leaf
-    @hedgehog.addClass 'onLeaf'
+    @hedgehog.find('.notice').hide()
+    # move #hedgehog element into this leaf
+    @ticket.find(clicked_leaf).append @hedgehog.removeClass('onTop').addClass 'onLeaf'
+    # scratch #hedgehog
+    # move #hedgehog back
+    move = (dist) =>
+      @hedgehog.find('img').animate
+        right: dist
+    move(px) for px in [30,-25,25,-30]
     @ticket.find(clicked_leaf).addClass('scratched').removeClass('covered')
     @ticket.find('.cloverleaf p.scratched span').fadeOut(2000)
     @finish() if @ticket.find('.cloverleaf .covered').length is 0
   finish: ->
     wait_then_hideTicket_= =>
-      @ticket.delay(1800).fadeOut 'slow', then_display_cal_and_bg_photo_
+      @ticket.delay(2800).fadeOut 'slow', then_display_cal_and_bg_photo_
     then_display_cal_and_bg_photo_=  =>
       $('body').addClass('discovered')
       @calendar.fadeIn 3000, then_write_note

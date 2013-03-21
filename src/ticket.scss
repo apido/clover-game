@@ -18,17 +18,22 @@ $RAD3: 0px;
   position: absolute;
   height: 128px;
   width: 128px;
-  margin-top: -470px;
-  margin-left: -40px;
+  &.onTop{
+    margin-top: -470px;
+    margin-left: -40px;
   img {@include transform(rotate(-70deg));}
-  em {
+  }
+  &.onLeaf {
+    margin-top: -120px;
+    margin-left: -40px;
+  }
+  em.notice {
     @include button;
     display: none;
     position: absolute;
     width: 150px;
   }
 }
-.onLeaf {background: red;}
 #ticket {
   width: 60%;
   min-width: $CLOVER_SIZE + 20;

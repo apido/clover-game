@@ -622,16 +622,20 @@ footer {
 #hedgehog {
   position: absolute;
   height: 128px;
-  width: 128px;
-  margin-top: -470px;
-  margin-left: -40px; }
-  #hedgehog img {
-    -webkit-transform: rotate(-70deg);
-    -moz-transform: rotate(-70deg);
-    -ms-transform: rotate(-70deg);
-    -o-transform: rotate(-70deg);
-    transform: rotate(-70deg); }
-  #hedgehog em {
+  width: 128px; }
+  #hedgehog.onTop {
+    margin-top: -470px;
+    margin-left: -40px; }
+    #hedgehog.onTop img {
+      -webkit-transform: rotate(-70deg);
+      -moz-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+      transform: rotate(-70deg); }
+  #hedgehog.onLeaf {
+    margin-top: -120px;
+    margin-left: -40px; }
+  #hedgehog em.notice {
     border: 1px solid #076fe4;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -658,7 +662,7 @@ footer {
     display: none;
     position: absolute;
     width: 150px; }
-    #hedgehog em:hover {
+    #hedgehog em.notice:hover {
       -webkit-box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
       -moz-box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
       box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
@@ -670,14 +674,11 @@ footer {
       background-image: -ms-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
       background-image: -o-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
       background-image: linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false)); }
-    #hedgehog em:active {
+    #hedgehog em.notice:active {
       border: 1px solid #076fe4;
       -webkit-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
       -moz-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
       box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false); }
-
-.onLeaf {
-  background: red; }
 
 #ticket {
   width: 60%;

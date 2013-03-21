@@ -42,7 +42,7 @@
       toggleInfo = function() {
         _this.ticket.find('div.cloverleaf p').toggleClass('info');
         _this.hedgehog.toggleClass('info');
-        return _this.hedgehog.find('em').fadeToggle();
+        return _this.hedgehog.find('.notice').fadeToggle();
       };
       toggleInfo();
       setTimeout(toggleInfo, 2600);
@@ -50,7 +50,20 @@
     };
 
     Cloverscratcher.prototype.scratch = function(clicked_leaf) {
-      this.hedgehog.addClass('onLeaf');
+      var move, px, _i, _len, _ref,
+        _this = this;
+      this.hedgehog.find('.notice').hide();
+      this.ticket.find(clicked_leaf).append(this.hedgehog.removeClass('onTop').addClass('onLeaf'));
+      move = function(dist) {
+        return _this.hedgehog.find('img').animate({
+          right: dist
+        });
+      };
+      _ref = [30, -25, 25, -30];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        px = _ref[_i];
+        move(px);
+      }
       this.ticket.find(clicked_leaf).addClass('scratched').removeClass('covered');
       this.ticket.find('.cloverleaf p.scratched span').fadeOut(2000);
       if (this.ticket.find('.cloverleaf .covered').length === 0) {
@@ -62,7 +75,7 @@
       var then_display_cal_and_bg_photo_, then_write_note, wait_then_hideTicket_,
         _this = this;
       wait_then_hideTicket_ = function() {
-        return _this.ticket.delay(1800).fadeOut('slow', then_display_cal_and_bg_photo_);
+        return _this.ticket.delay(2800).fadeOut('slow', then_display_cal_and_bg_photo_);
       };
       then_display_cal_and_bg_photo_ = function() {
         $('body').addClass('discovered');
