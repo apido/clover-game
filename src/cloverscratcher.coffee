@@ -7,7 +7,7 @@ class Cloverscratcher
     @ticket = $('div#ticket')
     @hedgehog = $('div#hedgehog')
     @calendar = $('#calendar')
-    @yet_noticed = no
+    @to_notice = yes
     ## drawSymbols
     #symbols = []
     #font_case = ['h','s','y','h']
@@ -16,17 +16,18 @@ class Cloverscratcher
     symbols = ['h','h','h','h']
     @ticket.find('#leaf-'+i+' p').append(symbols[i]) for i in [0..3]
     ## addListeners
-    @hedgehog.on 'click', ()=>@showInfo() unless @yet_noticed
-    @ticket.on 'mouseenter', '.cloverleaf p',()=> @showInfo() unless @yet_noticed
+    @hedgehog.on 'click', ()=> @showInfo()
+    @ticket.on 'mouseenter', '.cloverleaf p',()=> @showInfo()
     @ticket.find('.cloverleaf p').click (leaf_clicked_ev) => @scratch(leaf_clicked_ev.currentTarget)
   showInfo: ->
-    toggleInfo = =>
-      @ticket.find('div.cloverleaf p').toggleClass 'info'
-      @hedgehog.toggleClass 'info'
-      @hedgehog.find('.notice').fadeToggle()
-    toggleInfo()
-    setTimeout(toggleInfo,2600,)
-    @yet_noticed = yes
+    if @to_notice
+      @to_notice = no
+      toggleInfo = =>
+        @ticket.find('div.cloverleaf p').toggleClass 'info'
+        @hedgehog.toggleClass 'info'
+        @hedgehog.find('.notice').fadeToggle()
+      toggleInfo()
+      setTimeout(toggleInfo,2600,)
   scratch:(clicked_leaf) ->
     @hedgehog.find('.notice').hide()
     # move #hedgehog element into this leaf
