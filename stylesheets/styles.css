@@ -626,12 +626,6 @@ footer {
   #hedgehog.onTop {
     margin-top: -470px;
     margin-left: -40px; }
-    #hedgehog.onTop img {
-      -webkit-transform: rotate(-70deg);
-      -moz-transform: rotate(-70deg);
-      -ms-transform: rotate(-70deg);
-      -o-transform: rotate(-70deg);
-      transform: rotate(-70deg); }
   #hedgehog.onLeaf {
     margin-top: -120px;
     margin-left: -40px; }
