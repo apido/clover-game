@@ -27,7 +27,7 @@ $RAD3: 0px;
     margin-left: -40px;
   }
   em.notice {
-    @include button;
+    @include button('pill', #608497);
     display: none;
     position: absolute;
     width: 150px;

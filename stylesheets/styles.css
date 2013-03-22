@@ -630,49 +630,59 @@ footer {
     margin-top: -120px;
     margin-left: -40px; }
   #hedgehog em.notice {
-    border: 1px solid #076fe4;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: compact(inset 0 1px 0 0 #8ebcf1, false, false, false, false, false, false, false, false);
-    -moz-box-shadow: compact(inset 0 1px 0 0 #8ebcf1, false, false, false, false, false, false, false, false);
-    box-shadow: compact(inset 0 1px 0 0 #8ebcf1, false, false, false, false, false, false, false, false);
+    border: 1px solid #555555;
+    border-color: #555555 #454647 #333940;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+    -webkit-box-shadow: compact(inset 0 1px 0 0 #7596a6, 0 1px 2px 0 #b3b3b3, false, false, false, false, false, false, false);
+    -moz-box-shadow: compact(inset 0 1px 0 0 #7596a6, 0 1px 2px 0 #b3b3b3, false, false, false, false, false, false, false);
+    box-shadow: compact(inset 0 1px 0 0 #7596a6, 0 1px 2px 0 #b3b3b3, false, false, false, false, false, false, false);
     color: white;
     display: inline;
     font-size: 11px;
-    font-weight: bold;
-    background-color: #4294f0;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false)));
-    background-image: -webkit-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
-    background-image: -moz-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
-    background-image: -ms-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
-    background-image: -o-linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
-    background-image: linear-gradient(top, compact(#4294f0, #0776f3, false, false, false, false, false, false, false, false));
-    padding: 6px 18px 7px;
-    text-shadow: 0 1px 0 #0065d6;
+    font-weight: normal;
+    line-height: 1;
+    background-color: #608497;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, compact(#608497, #3e6486, false, false, false, false, false, false, false, false)));
+    background-image: -webkit-linear-gradient(top, compact(#608497, #3e6486, false, false, false, false, false, false, false, false));
+    background-image: -moz-linear-gradient(top, compact(#608497, #3e6486, false, false, false, false, false, false, false, false));
+    background-image: -ms-linear-gradient(top, compact(#608497, #3e6486, false, false, false, false, false, false, false, false));
+    background-image: -o-linear-gradient(top, compact(#608497, #3e6486, false, false, false, false, false, false, false, false));
+    background-image: linear-gradient(top, compact(#608497, #3e6486, false, false, false, false, false, false, false, false));
+    padding: 3px 16px 5px;
+    text-align: center;
+    text-shadow: 0 -1px 1px #525658;
     -webkit-background-clip: padding-box;
     display: none;
     position: absolute;
     width: 150px; }
     #hedgehog em.notice:hover {
-      -webkit-box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
-      -moz-box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
-      box-shadow: compact(inset 0 1px 0 0 #60a2ec, false, false, false, false, false, false, false, false);
+      border: 1px solid #42474a;
+      border-color: #42474a #2c3942 #1b2b39;
+      -webkit-box-shadow: compact(inset 0 1px 0 0 #698b9d, false, false, false, false, false, false, false, false);
+      -moz-box-shadow: compact(inset 0 1px 0 0 #698b9d, false, false, false, false, false, false, false, false);
+      box-shadow: compact(inset 0 1px 0 0 #698b9d, false, false, false, false, false, false, false, false);
       cursor: pointer;
-      background-color: #2f87ea;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false)));
-      background-image: -webkit-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
-      background-image: -moz-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
-      background-image: -ms-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
-      background-image: -o-linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false));
-      background-image: linear-gradient(top, compact(#2f87ea, #086fe3, false, false, false, false, false, false, false, false)); }
+      background-color: #577889;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, compact(#577889, #455563, false, false, false, false, false, false, false, false)));
+      background-image: -webkit-linear-gradient(top, compact(#577889, #455563, false, false, false, false, false, false, false, false));
+      background-image: -moz-linear-gradient(top, compact(#577889, #455563, false, false, false, false, false, false, false, false));
+      background-image: -ms-linear-gradient(top, compact(#577889, #455563, false, false, false, false, false, false, false, false));
+      background-image: -o-linear-gradient(top, compact(#577889, #455563, false, false, false, false, false, false, false, false));
+      background-image: linear-gradient(top, compact(#577889, #455563, false, false, false, false, false, false, false, false));
+      text-shadow: 0 -1px 1px #38454f;
+      -webkit-background-clip: padding-box; }
     #hedgehog em.notice:active {
-      border: 1px solid #076fe4;
-      -webkit-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
-      -moz-box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false);
-      box-shadow: compact(inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee, false, false, false, false, false, false); }
+      background: #58646c;
+      border: 1px solid #263038;
+      border-bottom: 1px solid #202c39;
+      -webkit-box-shadow: compact(inset 0 0 6px 3px #344555, 0 1px 0 0 white, false, false, false, false, false, false, false);
+      -moz-box-shadow: compact(inset 0 0 6px 3px #344555, 0 1px 0 0 white, false, false, false, false, false, false, false);
+      box-shadow: compact(inset 0 0 6px 3px #344555, 0 1px 0 0 white, false, false, false, false, false, false, false);
+      text-shadow: 0 -1px 1px #3e464c; }
 
 #ticket {
   width: 60%;
