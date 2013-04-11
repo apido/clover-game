@@ -80,6 +80,8 @@ i, em { font-style: italic }
     text-align: center;
     padding: 25px;
     opacity: .3;
+    font-family: 'Clicker Script', cursive;
+
 }
 
 .step.active{ opacity: 1; }
